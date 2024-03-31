@@ -9,10 +9,15 @@ div.a {
 
 div.b {
   margin-left: 30px;
+  font-size: 0.8em;
 }
 
 div.c {
-  font-size: 1.12em;
+  font-size: 1.3em;
+}
+
+ul.a {
+  margin-top: 0;
 }
 
 </style>
@@ -21,7 +26,7 @@ div.c {
 <body>
 
 <div class="a">
-<h1>James Pfeifer's Public Software</h1>
+<h1>James Pfeifer's GitHub Public Software</h1>
 </div>
 
 <br />
@@ -35,11 +40,19 @@ div.c {
 <h2>Java Classes</h2>
 <div class="c">
 <a href="https://github.com/jpfeifdom/java-api/blob/master/java-api/src/net/pfeifdom/java/util/NodableLinkedList.java">NodableLinkedList</a>
+  <div class="b">
+    Basically a drop in replacement for the standard <code>java.util.LinkedList</code> class.
+    Use <code>NodableLinkedList</code> in place of <code>java.util.LinkedList</code> when:
+    <ul class="a">
+      <li>you require the capability to insert or remove elements, anywhere in the
+          list, in constant time</li>
+      <li>you require the flexibility of traversing the list via the next and
+          previous pointers of the nodes which comprise the linked list</li>
+      <li>the list could have more than <code>Integer.MAX_VALUE</code> elements</li>
+    </ul>
+  </div>
 </div>
-<div class="b">
- Doubly-linked list implementation of the List and Deque interfaces, with the capability to perform insert and remove operations,
- at any point in the list, in constant time.
-</div>
+
 
 </body>
 </html>
